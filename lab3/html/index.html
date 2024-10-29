@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ordering from</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body class="container">
+    <header class="element">
+        <img src="https://i.namu.wiki/i/65jmONpIazeCLhJgHMrtMDpUHsLr6tJu3Jx_pKRpRxudV0P2FZ05HZuyw651531MzEXMP49VQxz3Cbd769YZDQ.webp" alt="logo">
+    </header>
+    <div class="element" id="content-container">
+        <article class="inner-element">
+            <form id="dataForm">
+                <h1>Configure Your Dream Furniture</h1>
+                <div class="section">
+                    <div class="option">
+                        Name: <input type="text" id="user-name" placeholder="Enter your name" required>
+                    </div>
+                    <div class="option">
+                    Email: <input type="email" id="user-email" placeholder="Enter your email" required>
+                    </div>
+                    <div class="option">
+                        Product Type:
+                        <input type="radio" id="chair" name="product-type" value="chair" required> Chair
+                        <input type="radio" id="table" name="product-type" value="table"> Table
+                        <input type="radio" id="bed" name="product-type" value="bed"> Bed
+                    </div>
+                </div>
+                <h3>Dimensions</h3>
+                <div class="section">
+                    <div class="option">
+                        Width: <input type="number" min="10" id="width" placeholder="Enter width in cm" required>
+                    </div>
+                    <div class="option">
+                        Height: <input type="number" min="10" id="height" placeholder="Enter height in cm" required>
+                    </div>
+                </div>
+                <h3>Materials</h3>
+                <div class="section">
+                    <div class="option">
+                        Material:
+                        <select id="material" required> 
+                            <option value="wood">Wood</option> 
+                            <option value="metal">Metal</option> 
+                            <option value="plastic">Plastic</option>
+                        </select>
+                    </div>
+                    <div class="option" id="color-align">
+                        Color: <input type="color" id="color" value="#D2B48C">
+                    </div>
+                </div>
+                <h3>Additional Features</h3>
+                <div class="section">
+                    <div class="option">
+                        Storage: <input type="checkbox" id="storage"> Yes
+                    </div>
+                </div>
+                <h3>Delivery</h3>
+                <div class="section">
+                    <div class="option"> 
+                        Delivery Date: <input type="date" id="delivery-date" required>
+                    </div>
+                    <div class="option">
+                        Address: <input type="text" id="delivery-address" placeholder="Enter delivery address" required>
+                    </div>
+                </div>
+                <div class="option">
+                    <button id="btnReset">Reset</button>
+                    <button id="btnModal" type="submit">Configure and Order</button>
+
+                    <!-- Модальное окно -->
+                    <div id="msgModal" class="modal">
+                        <!-- Модальное содержание -->
+                        <div class="modal-content">
+                        <!--&times; - сущность, представляющая символ умножения (×)-->
+                        <span class="close">&times;</span> 
+                        <p>Your information has been submitted successfully</p>
+                        </div>
+                    </div>
+                </div>
+            </form>
+            
+        <script src="../js/history.js"></script>
+            
+        </article>
+        <nav class="inner-element">
+            <h4>Furniture Categories</h4>
+            <ul>
+                <li><a href="">Living Room</a></li> 
+                <li><a href="">Bedroom</a></li> 
+                <li><a href="">Dining Room</a></li> 
+                <li><a href="">Office Furniture</a></li> 
+                <li><a href="">Outdoor Furniture</a></li> 
+            </ul> 
+            <a href="table.html">View orderimg history</a>
+        </nav>
+        <aside class="inner-element">             
+            <h4>Special Offers</h4> 
+            <p>Up to 30% off on selected items! Don't miss the chance to update your interior.</p> 
+            <a href="">View Offers</a> 
+            
+            <h4>Delivery Information</h4> 
+            <p>Free delivery on orders over 5000 rubles. Delivery across the country!</p> 
+                
+            <h4>Newsletter Subscription</h4>
+            <form>
+                <input type="email" placeholder="Your email" required><br>
+                <button type="submit">Subscribe</button>
+            </form>
+        </aside>
+    </div>
+    
+    <footer class="element">
+        <table id="footer-table">
+            <tr>
+                <td><h4>Contact Us</h4>
+                    Address: 123, Furniture St., City, Country <br>
+                    Phone: +1 (123) 456 7890 <br>
+                    Email: info@furniturewebsite.com
+                </td>
+                <td><h4>Working Hours:</h4>
+                    Monday - Saturday: 
+                    10am - 7pm <br>
+                    Sunday: Closed
+                </td>
+                <td><h4>Follow Us</h4>
+                    Facebook: facebook.com/furniturewebsite <br>
+                    Instagram: instagram.com/furniturewebsite
+                </td>
+            </tr>
+            <tr><td colspan="3" id="copyright-text">Copyright
+                2023 Furniture Website. All rights reserved.</td>
+            </tr>
+        </table>
+        </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>

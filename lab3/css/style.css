@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+.container{
+    display: flex;
+    flex-flow: column wrap;
+    font-family: Roboto;
+}
+.element{
+    width: 100%;
+    background-color: rgb(220, 220, 220);
+}
+#content-container{
+    display: flex;
+    /*justify-content: space-between;*/
+}
+header, footer {
+    display: flex;
+    align-items: center;
+    /*height: 150px;*/
+}
+article {
+    flex-basis: 60%;
+    background-image: url(https://i.scdn.co/image/ab67616d0000b273c21555708975ad94b1faf422);
+    background-size: cover;
+    padding: 10px 5% 50px 5%;
+    display: flex;
+    flex-direction: column;
+}
+/*секции формы*/
+.section {
+    background-color: rgba(155, 163, 167, 0.327);
+    display: flex;
+    flex-flow: row wrap;
+}
+/*составляющие секции*/
+.option {
+    padding: 10px 5% 3% 10px;
+    /*border: 1px solid red;*/
+    flex-basis: content;
+    
+}
+nav, aside{
+    flex-basis: 20%;
+    background-color: rgb(197, 197, 197);
+    /*border: 1px solid rgb(113, 127, 134);*/
+    padding: 15px 15px 10px 30px;
+}
+img {
+    height: 80px;
+    margin: 7px;
+}
+button {
+    margin-top: 30px;
+    height: 30px;
+}
+table{
+    width: 100%;
+}
+#history-table {
+    border-collapse: collapse;
+    background-color: #f3f3f3;
+    font-size: 1.2vw;
+}
+th {
+    border: 3px solid rgb(193, 193, 194);
+    vertical-align: top;
+    padding: 10px;
+}
+#footer-table td {
+    width: 33%;
+    padding: 30px 0 20px 30px;
+    vertical-align: top;
+}
+#history-table td {  
+    text-align: center;
+    border: solid 1px rgb(193, 193, 194);
+}
+#copyright-text {
+    padding-bottom: 10px;
+    text-align: center;
+    font-size: 12px;
+}
+
+/*модального окна*/
+/*фон моадльного окна*/
+.modal {
+    display: none; /* Скрыто по умолчанию */
+    position: fixed; /* Оставаться на месте */
+    z-index: 2;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.4);
+}
+  
+/*содержание окна*/
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% сверху и по центру */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+  
+/*Кнопка закрыть*/
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+  
+.close:hover, .close:focus {
+    color: rgb(104, 92, 76);
+    text-decoration: none;
+    cursor: pointer;
+}
